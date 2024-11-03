@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main Box -->
+    <div class="container">
+        <!-- Add, Minus & Count Value Box -->
+        <div class="main-items-box">
+            <ul>
+                <!-- Minus Button -->
+                <li class="minus-box"><button class="minus" onclick="minus()">-</button></li>
+                <!-- Count Value -->
+                <li>
+                    <div class="count-num">
+                        <h1 class="count">0</h1>
+                    </div>
+                </li>
+                <!-- Add Button -->
+                <li class="add-box"><button class="add" onclick="add()">+</button></li>
+            </ul>
+        </div>
+        <!-- Reset Button -->
+        <button class="reset" onclick="reset()">Reset</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

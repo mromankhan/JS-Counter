@@ -1,0 +1,171 @@
+    /* Body and Background Styling */
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        /* Light gradient background */
+    }
+
+    .container {
+        /* border: 2px solid #ff6347; */
+        /* Tomato color border */
+        position: relative;
+        top: 0;
+        width: 360px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Add, Minus & Count Value Box styling */
+    .main-items-box {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Minus & Add button styling */
+    .minus,
+    .add {
+        width: 50px;
+        height: 25px;
+        font-size: 20px;
+        border: none;
+        color: black;
+        background: greenyellow;
+        border-radius: 20px;
+        box-shadow: 0 4px #666;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .minus:hover,
+    .add:hover {
+        color: white;
+        background-color: greenyellow;
+    }
+
+    .minus:active,
+    .add:active {
+        color: white;
+        background-color: greenyellow;
+        box-shadow: 0 2px #444;
+        transform: translateX(2px);
+        transform: translateY(2px);
+    }
+
+    /* Count value box styling */
+    .count-num {
+        border-radius: 20px;
+        width: auto;
+        margin: 20px;
+    }
+
+    /* Count value */
+    .count {
+        border: 2px solid #adff2f;
+        background-color: lightgray;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin: 20px;
+
+    }
+
+    /* Reset button styling */
+    .reset {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        color: black;
+        background: greenyellow;
+        border-radius: 10px;
+        box-shadow: 0 4px #666;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .reset:hover {
+        color: white;
+        background-color: #62e019;
+    }
+
+    .reset:active {
+        color: white;
+        background-color: greenyellow;
+        box-shadow: 0 2px #444;
+        transform: translateX(2px, 2px);
+    }
+
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+
+        /* Adjust container for medium-sized screens */
+        .container {
+            max-width: 80%;
+            padding: 15px;
+        }
+
+        /* Adjust buttons and count value for medium-sized screens */
+        .minus,
+        .add {
+            width: 60px;
+            height: 30px;
+            font-size: 18px;
+        }
+
+        .count {
+            font-size: 1.8rem;
+            padding: 4px 8px;
+        }
+
+        .reset {
+            width: 90px;
+            height: 35px;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        /* Adjust container for small screens */
+        .container {
+            max-width: 95%;
+            padding: 10px;
+        }
+
+        /* Adjust buttons and count value for small screens */
+        .minus,
+        .add {
+            width: 50px;
+            height: 30px;
+            font-size: 16px;
+        }
+
+        .count {
+            font-size: 1.5rem;
+            padding: 3px 6px;
+        }
+
+        .reset {
+            width: 80px;
+            height: 30px;
+            font-size: 12px;
+        }
+    }
