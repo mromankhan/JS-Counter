@@ -1,1 +1,1 @@
-Vanell-JS Counter
+Vanella-JS Counter
